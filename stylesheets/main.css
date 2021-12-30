@@ -1,7 +1,6 @@
 
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 /* Styling starts here */
 *{
@@ -11,5 +10,26 @@
 }
 
 body{
-    font-family: 'Press Start 2P', cursive;
+    font-family: mono;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin: auto;
+    margin-top: 5rem;
+}
+
+#grid{
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 300px; */
+    height: fit-content;
+    width: 400px;
+    box-sizing: content-box;
+    border: 3px solid black;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
