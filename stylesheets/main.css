@@ -68,6 +68,7 @@ body {
 .press-here-text {
   color: rgb(39, 27, 27);
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .blurred-bg,
@@ -177,6 +178,7 @@ body {
 
 .pokemon-card{
   width: 100px;
+  cursor: help;
 }
 
 /* Won game */
