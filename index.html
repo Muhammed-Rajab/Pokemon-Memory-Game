@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Game</title>
 
+    <!-- External libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- Style sheets -->
     <link rel="stylesheet" href="./stylesheets/main.css">
 
@@ -14,12 +17,74 @@
     
     <!-- Code starts here -->
 
-    <!-- Score board -->
-    <h1>Score: <span class="score">0</span></h1>
-    <!-- Game grid -->
-    <div id="grid">
+    <!-- Start game window -->
+    <div class="start-game-container">
+        <div class="flex-all-center start-game-window-banner">
+            <div class="flex-all-center start-game-window-title-heading-wrapper">
+                <img class="start-game-window-banner-image" src="./assets/images/banner.png" alt="" srcset="">
+            </div>
+            <span class="sub-heading-wrapper">
+                Card game
+            </span>
+        </div>
+        <div class="start-game-window-footer flex-all-center">
+            <span class="animate__animated animate__flash animate__infinite	animate__slow press-here-text">Click here to  start the game</span>
+        </div>
+    </div>
+    <div class="animate__animated animate__fadeIn blurred-bg hidden animate__fast">
+
+    </div>
+    <!-- Select difficulty window -->
+    <div class="animate__animated animate__fadeIn select-difficulty-modal-container  hidden">
+        <h1 class="select-difficulty-title">
+            select difficulty
+        </h1>
+        <hr>
+        <div class="difficulty-option-list">
+            <button class="difficulty-btn difficulty-btn-easy" data-code="1">
+                Easy
+            </button>
+            <button class="difficulty-btn difficulty-btn-medium" data-code="2">
+                Medium
+            </button>
+            <button class="difficulty-btn difficulty-btn-hard" data-code="3">
+                Hard
+            </button>
+        </div>
     </div>
 
+    <!-- Game Window -->
+    <div class="flex-all-center main-game-window hidden">
+        
+        <!-- Score board -->
+        <div class="score-and-timer-container">
+            <h1 class="score-h1">Score: <span class="score">0</span></h1>
+            <span class="timer-wrapper">Time: <span class="timer">00:00</span></span>
+        </div>
+        
+        <!-- Game grid -->
+        <div id="grid">
+        </div>
+
+    </div>
+
+    <div class="animate__animated animate__fadeIn blurred-bg-2 animate__fast hidden">
+    </div>
+    <!-- Won game window -->
+    <div class="flex-all-center won-game-container animate__animated animate__fadeIn animate__fast hidden">
+        <h1 class="won-game-title">
+            You won!
+        </h1>
+        <h2>
+            Time Taken: <span class="time-taken-win"></span> 
+            seconds
+        </h2>
+        <div class="play-again-btn-wrapper">
+            <button class="btn-end restart-again">
+                Restart
+            </button>
+        </div>
+    </div>
     <!-- Scripts -->
     <script src="./scripts/main.js"></script>
 </body>
