@@ -249,8 +249,6 @@ function onDOMContentLoad(){
 
             this.src    = randomCardsArray[cardIndex].src;
             
-            log(activeCardsIndexes, activeCards);
-
             setTimeout(checkMatch, 150);
             
         };
@@ -278,7 +276,6 @@ function onDOMContentLoad(){
             const [card1Index, card2Index] = activeCardsIndexes;
 
             if (card2Index === card1Index){
-                log("YOu can't  select  the same  card!!");
                 replaceCards(false);
                 clearActiveCardsAndIndexes();
                 return;
