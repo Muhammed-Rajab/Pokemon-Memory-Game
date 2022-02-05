@@ -3,8 +3,6 @@
 
 > I added a lot of extended features to this project. Make sure you checkout script.js file
 
-<hr/>
-<hr/>
 <br/>
 
 ## Starting
